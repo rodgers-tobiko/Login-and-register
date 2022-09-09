@@ -1,0 +1,47 @@
+body{
+    background-image: url("/images/backgound.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    width: 25%;
+    margin: auto;
+    margin-top: 55px;
+    padding: 40px;
+    color:darkgrey;
+    border: 0.1em solid darkgrey;
+    float: right;
+}
+input{
+    margin-bottom: 0;
+}
+#email{
+    margin-bottom: 0;
+}
+/* Section styling */
+section{
+    width: 60%;
+    float: left;
+    color: darkgray;
+    
+}
+
+section #logout{
+    border: none;
+    margin: auto;
+    font-size: large;
+    float: right;
+    display: inline;
+
+}
+
+section p{
+    display: inline;
+}
+
+.navvy h1{
+    float: left;
+}
+.navvy #logout{
+    float: right;
+}

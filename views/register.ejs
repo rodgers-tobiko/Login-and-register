@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h1><%= page %></h1>
+            <p>
+                As a result, users waste 
+appreciable amounts of time per day logging into multiple applications. Helpdesk resolves 
+approximately 6000 calls per year to reset forgotten passwords & unlock accounts. Security risks are 
+introduced as users continue to write usernames & passwords on sticky notes at their desks.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+        </section>
+        <form action="/register" method="post">
+            <% if(messages.error) { %> 
+                <div class="alert alert-danger">
+                   <strong><%= messages.error %></strong>
+                </div>
+                <% } %> 
+            <h1>Register</h1>
+            <div class="form-group">
+
+                <!-- name input -->
+            <input type="text" name="name" class="form-control" placeholder="full name"><br>
+            <label for="name">Full name</label>
+
+                <!-- Email input -->
+            <input type="email" name="email" class="form-control" placeholder="email" id="email"><br>
+            <label for="email">Email address</label><br>
+
+                <!-- Password input -->
+            <input type="password" name="password" class="form-control" placeholder="password"><br>
+                <!-- Submit button -->
+            <button type="submit">Sign Up</button><br>
+            </div><br>
+            <label>Don't have an account?<a href="/login">Login</a></label>
+            
+        </form>
+    </div>
+</body>
+</html>
